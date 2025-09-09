@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flixcart Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+        }
+
+        .navbar nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 5px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .nav-item h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .nav-item:hover h4 {
+            color: #007bff;
+        }
+
+        .nav-item img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 25px;
+            padding: 5px 15px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s;
+        }
+
+        .search-box:hover {
+            border-color: #007bff;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            padding: 8px;
+            font-size: 14px;
+            width: 200px;
+        }
+
+        .search-box img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        /* Product Section */
+        .product {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+        }
+
+        .product-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .search-box input {
+                width: 120px;
+            }
+
+            .nav-item h4 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <nav>
+            <div class="logo">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                    alt="Flixcart Logo" />
+            </div>
+
+            <div class="search-box">
+                <form>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUwvcX7C2Blr2e88Ckzky52gmRI0kZjbkf0A&s"
+                        alt="Search Icon" />
+                    <input type="text" placeholder="Search products..." />
+                </form>
+            </div>
+
+            <div class="nav-item login">
+                <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt="User Icon" />
+                <h4>Login</h4>
+            </div>
+
+            <div class="nav-item cart">
+                <img src="https://www.shutterstock.com/image-vector/shopping-cart-notification-icon-containing-260nw-2300920115.jpg"
+                    alt="Cart Icon" />
+                <h4>Cart</h4>
+            </div>
+
+            <div class="nav-item seller">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxXMey9qLMcQ9ppwQQuBQQXIQd9gwZA41gzA&s"
+                    alt="Seller Icon" />
+                <h4>Become a Seller</h4>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product">
+        <div class="product-card">
+            <img src="https://www.apple.com/v/iphone/home/cd/images/meta/iphone__kqge21l9n26q_og.png"
+                alt="Best Phone Categories" />
+            <h3>Best Phone Categories</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtnRx9wiykPdFdD3ERDqUS-HYXjxJureTC7A&s"
+                alt="Best Clothing Brands" />
+            <h3>Best Clothing Brands</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="https://saudewala.in/cdn/shop/collections/Laptop.jpg?v=1732216115&width=1296"
+                alt="Best Laptop Collection" />
+            <h3>Best Laptop Collection</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="https://assets-news.housing.com/news/wp-content/uploads/2024/06/23232621/Popular-wooden-home-decor-items-in-2024-12.jpg"
+                alt="Home Interior Products" />
+            <h3>Home Interior Products</h3>
+        </div>
+    </section>
+
+</body>
+
+</html>

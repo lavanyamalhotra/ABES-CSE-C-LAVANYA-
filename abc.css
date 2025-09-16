@@ -1,0 +1,27 @@
+Student {
+  display: block;
+  padding: 20px;
+  border: 2px solid #333;
+  background: #f0f0f0;
+  margin: 20px;
+}
+
+Student1 {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  background: white;
+}
+
+name {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+rollno {
+  display: block;
+  font-size: 16px;
+  color: #555;
+}

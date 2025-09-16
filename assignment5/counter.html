@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+<body>
+    <div id="count"
+        style="width: 300px; height: 300px; background-color: lightgreen; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div id="value" style="font-size: 2em;">0</div>
+        <button onclick="add()" id="add">Add</button>
+        <button onclick="sub()" id="sub">Sub</button>
+    </div>
+
+    <script>
+        var v = 0;
+
+        function updateDisplay() {
+            document.getElementById("value").innerText = v;
+        }
+
+        function add() {
+            document.getElementById("add")
+            if (v < 10) {
+                v = v + 1;
+                updateDisplay();
+            }
+        };
+
+        function sub() {
+            document.getElementById("sub")
+            if (v > 0) {
+                v = v - 1;
+                updateDisplay();
+            }
+        };
+
+
+        updateDisplay();
+    </script>
+</body>
+
+</html>

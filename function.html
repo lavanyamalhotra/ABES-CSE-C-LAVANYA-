@@ -7,13 +7,33 @@
     <title>FUNCTION</title>
 </head>
 
-<body>
+<body id="lava">
+    <!-- <div style="border: 10px solid red; height: 100px ;width: 100px;background-color: cadetblue;" class="lava">
+        <button onclick="push()" type="button">Click</button>
+        <p id="lavaa"></p>
+    </div> -->
+    <button onclick="red()">RED</button>
+    <button onclick="blue()">BLUE</button>
+    <button onclick="yellow()">YELLOW</button>
     <script>
-        function add(a, b) {
-            var additon = a + b;
-            document.write(additon);
+        // function add(a, b) {
+        //     var additon = a + b;
+        //     document.write(additon);
+        // }
+        // add(1, 2);
+        // function push() {
+        //     document.getElementById("lavaa").innerHTML = "<h2>hello</h2>";
+        // }
+        function red() {
+            document.getElementById("lava").style.backgroundColor = "red";
         }
-        add(1, 2);
+        function blue() {
+            document.getElementById("lava").style.backgroundColor = "blue";
+        }
+        function yellow() {
+            document.getElementById("lava").style.backgroundColor = "yellow";
+        }
+
     </script>
 </body>
 

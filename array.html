@@ -8,17 +8,32 @@
 </head>
 
 <body>
-    <p id="lava"></p>
-    <script>
-        // var car = new Array("mercedes", "audi", "bmw");
-        // document.getElementById("lava").innerHTML = car[2];
+    <h2>CSE Students</h2>
+    <div id="cse"></div>
 
-        const person = {
-            firstName: "Lavanya",
-            lastName: "Malhotra",
-            age: 19
-        };
-        document.getElementById("lava").innerHTML = (person.firstName);
+    <h2>IT Students</h2>
+    <div id="it"></div>
+
+    <script>
+        const people = [
+            { firstName: "Lavanya", lastName: "Malhotra", age: 19, branch: "cse" },
+            { firstName: "Lakshay", lastName: "Garg", age: 19, branch: "cse" },
+            { firstName: "Mansi", lastName: "Murmuru", age: 19, branch: "it" },
+            { firstName: "Kush", lastName: "Mahesh", age: 19, branch: "it" },
+            { firstName: "Pushkar", lastName: "Malhotra", age: 19, branch: "cse" }
+        ];
+
+        const cseDiv = document.getElementById("cse");
+        const itDiv = document.getElementById("it");
+
+        people.forEach(p => {
+            let info = p.firstName + " " + p.lastName + " (Age: " + p.age + ")";
+            if (p.branch === "cse") {
+                cseDiv.innerHTML += info + "<br>";
+            } else {
+                itDiv.innerHTML += info + "<br>";
+            }
+        });
     </script>
 </body>
 

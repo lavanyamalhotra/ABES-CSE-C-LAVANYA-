@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .inner {
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 5%;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner" id="lg">
+
+        </div>
+        <div class="inner" id="samsung">
+
+        </div>
+        <div class="inner" id="lgg">
+
+        </div>
+    </div>
+    <script>
+        const phones = new Object({
+            phone1: ["samsung", 32000, "gb"],
+            phone2: ["lg", 64000, "32gb"],
+            phone3: ["lgg", 32000, "32gb"]
+        });
+        document.getElementById("lg").innerHTML = phones.phone1;
+        document.getElementById("samsung").innerHTML = phones.phone2;
+        document.getElementById("lgg").innerHTML = phones.phone3;
+    </script>
+</body>
+
+</html>

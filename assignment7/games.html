@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .inner {
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 5%;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner" id="pubg">
+
+        </div>
+        <div class="inner" id="valo">
+
+        </div>
+        <div class="inner" id="templerun">
+
+        </div>
+    </div>
+    <script>
+        const games = new Object({
+            phone1: ["pubg", "pc", "1gb"],
+            phone2: ["valo", "phone", "32gb"],
+            phone3: ["templerun", "phone", "1gb"]
+        });
+        document.getElementById("pubg").innerHTML = games.phone1;
+        document.getElementById("valo").innerHTML = games.phone2;
+        document.getElementById("templerun").innerHTML = games.phone3;
+    </script>
+</body>
+
+</html>
